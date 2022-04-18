@@ -14,7 +14,7 @@
     <header id="myHeader">
         <div class="container">
             <nav class="navbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav topnav" id="myTopnav">
                     <li class="nav-item">
                         <a href="#section-home" class="nav-link">home</a>
                     </li>
@@ -29,6 +29,29 @@
                     </li>
                     <li class="nav-item">
                         <a href="#section-contact" class="nav-link">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="navbar-mobile">
+                <span class="nav-btn fa-solid fa-bars"></span>
+            </label>
+            <input  type="checkbox" class="nav-input" name="navInput" id="navbar-mobile">
+            <nav class="navbar-mobile">
+                <ul class="navbar-nav-mobile">
+                    <li class="nav-item-mobile">
+                        <a href="#section-home" class="nav-link-mobile">home</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="#section-portfolio" class="nav-link-mobile">Portfolio</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="#section-resume" class="nav-link-mobile">resume</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="#section-about" class="nav-link-mobile">about</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="#section-contact" class="nav-link-mobile">contact</a>
                     </li>
                 </ul>
             </nav>
@@ -53,13 +76,13 @@
                 <strong>Portfolio</strong>
             </h2>
             <div class="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')">All</button>
-                <button class="btn" onclick="filterSelection('Packaging')"> PACKAGING</button>
-                <button class="btn" onclick="filterSelection('Mockup')"> MOCKUP</button>
-                <button class="btn" onclick="filterSelection('Typography')"> Typography</button>
-                <button class="btn" onclick="filterSelection('Photography')"> Photography</button>
+                <button class="btn active mb-5" onclick="filterSelection('all')">All</button>
+                <button class="btn mb-5" onclick="filterSelection('Packaging')"> PACKAGING</button>
+                <button class="btn mb-5" onclick="filterSelection('Mockup')"> MOCKUP</button>
+                <button class="btn mb-5" onclick="filterSelection('Typography')"> Typography</button>
+                <button class="btn mb-5" onclick="filterSelection('Photography')"> Photography</button>
             </div>
-            <div class="containerFilter">
+            <div class="containerFilter ">
                 <div class="filter-item Mockup mb-50">
                     <div class="filter-img">
                         <img src="img/xp1.jpg.pagespeed.ic.mIhs0iC2xX.webp" alt="pagepeed">
@@ -118,6 +141,7 @@
         </div>
     </section>
     <!--END SECTION HOME-->
+    <!--SECTION RESUME-->
     <section class="section-resume" id="section-resume">
         <div class="container">
             <div class="mb-5">
@@ -190,7 +214,7 @@
                 <div class="col">
                     <img src="img/code-reach.jpg" alt="pagepeed">
                 </div>
-                <div class="col ps-3">
+                <div class="col ">
                     <div class="title">
                         <h2>About
                             <strong>me</strong>
@@ -417,16 +441,16 @@
                     <h3 class="mb-5">get in touch</h3>
                     <div class="form">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="" id="" placeholder="Your Name">
+                            <input type="text" class="form-control" name="yourname" id="yourname" placeholder="Your Name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="" id="" placeholder="Your Email">
+                            <input type="email" class="form-control" name="youremail" id="youremail" placeholder="Your Email">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="" id="" placeholder="Your Phone">
+                            <input type="email" class="form-control" name="yourphone" id="yourphone" placeholder="Your Phone">
                         </div>
                         <div class="form-group mb-5">
-                            <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Write a Message"></textarea>
+                            <textarea class="form-control" name="Write" id="write" cols="30" rows="10" placeholder="Write a Message"></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Send Mesage" class="btn-primary">
@@ -459,37 +483,39 @@
             <div class="row mb-5">
                 <p class="col text-center">Copyright © 2022 All rights reserved | This template is made with <a href="#">by Colorlib</a></p>
             </div>
+            <div class="row">
+                <ul class="col">
+                    <li>
+                        <a href="#" class="social-item">
+                            <span class="bi bi-facebook"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-item">
+                            <span class="bi bi-twitter"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-item">
+                            <span class="bi bi-instagram"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-item">
+                            <span class="fa fa-linkedin-square"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-item">
+                            <span class="bi bi-vimeo"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="row">
-            <ul class="col">
-                <li>
-                    <a href="#" class="social-item">
-                        <span class="bi bi-facebook"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-item">
-                        <span class="bi bi-twitter"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-item">
-                        <span class="bi bi-instagram"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-item">
-                        <span class="fa fa-linkedin-square"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-item">
-                        <span class="bi bi-vimeo"></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+       
     </footer>
+    <script src="https://kit.fontawesome.com/5b04719adb.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
